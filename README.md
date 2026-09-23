@@ -15,7 +15,7 @@ M.S. Artificial Intelligence and B.S. Computer Science, Oregon State University.
 | Project | What I built | Evidence and limits |
 |---|---|---|
 | [SPUR metric depth](https://github.com/joses2017smjh/spur-depth-service) | Synthetic depth models, FastAPI inference and split ONNX export. | Encoder parity max difference 1.53e-5; V100 fp16 model p50 156 ms per six-view group. Field accuracy remains unverified. |
-| [Humanoid Robustness Ladder](https://github.com/joses2017smjh/bhl-robustness-ladder) | Isaac Lab curricula, ONNX/MuJoCo evaluation and seeded failure controls. | New known-route Isaac task: 379/384 first episodes. Separate frozen-gait MuJoCo inspection: 3/3. No hardware-transfer claim. |
+| [Humanoid Robustness Ladder](https://github.com/joses2017smjh/bhl-robustness-ladder) | Isaac Lab curricula, ONNX/MuJoCo evaluation and seeded failure controls. | Known-route Isaac task: 380/384 first episodes with sensor noise on; one 20 ms IMU delay drops it to 0.31. Frozen-gait MuJoCo inspection: 3/3. No hardware-transfer claim. |
 | [Vision-guided pruning](https://github.com/joses2017smjh/isaac-sim-pruning-workflow) | RGB-D control, dual-ToF release checks and an independent recording grader. | Success and stopped-closure recordings; one selected episode passes 17/17 checks. Known target, classical tracking, rigid-piece release. |
 | [MetaNaviT](https://github.com/joses2017smjh/MetaNavT) | Retrieval and data APIs in a six-person team; solo follow-up: hybrid retrieval benchmark served over Postgres. | BEIR SciFact, 300 queries: reranked hybrid +0.075 nDCG@10 over BM25 (95% CI 0.053 to 0.101); our BM25 matches Anserini within 0.002. LLM-judge gate not yet evaluable. |
 
