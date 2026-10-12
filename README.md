@@ -1,29 +1,32 @@
 # Jose Sanchez Gonzalez
 
-I build robot perception, control, and simulation—from metric-depth inference to VR teleoperation on a self-built humanoid.
+I build robot perception, control, and AI software—from VR control of a physical humanoid to metric-depth models and retrieval tools that show their sources.
 
-Seeking **robotics software, AI/ML, and computer vision engineering** roles. M.S. Artificial Intelligence and B.S. Computer Science, Oregon State University.
+Seeking **robotics software, embodied AI, computer vision, and AI/software engineering** roles. M.S. Artificial Intelligence and B.S. Computer Science, Oregon State University.
 
-[Portfolio](https://jose-sanchez-portfolio-com.vercel.app) · [Résumé](https://jose-sanchez-portfolio-com.vercel.app/resume.pdf) · [LinkedIn](https://linkedin.com/in/jose-j-sanchez-gonzalez-84a800257/) · [Email](mailto:josejsanchez20172@gmail.com)
+[Portfolio](https://jose-sanchez-portfolio-com.vercel.app/) · [Résumé](https://jose-sanchez-portfolio-com.vercel.app/resume.pdf) · [LinkedIn](https://linkedin.com/in/jose-j-sanchez-gonzalez-84a800257/) · [Email](mailto:josejsanchez20172@gmail.com)
 
-[![Berkeley Humanoid Lite physical arm teleoperation demonstration](https://media.githubusercontent.com/media/joses2017smjh/quest-vr-teleop/main/docs/demo/quest-vr-teleop.gif)](https://jose-sanchez-portfolio-com.vercel.app/projects/berkeley-humanoid-vr/)
+[![Quest headset controlling physical humanoid arms](https://media.githubusercontent.com/media/joses2017smjh/quest-vr-teleop/main/docs/demo/quest-vr-teleop.gif)](https://jose-sanchez-portfolio-com.vercel.app/projects/berkeley-humanoid-vr/)
 
-*Quest 2 arm control with simulation and physical-hardware backends. The case study includes the demonstration and calibration evidence.*
+*Physical arm teleoperation. Learned locomotion is evaluated separately in simulation.*
 
 ## Featured work
 
-- **[Berkeley Humanoid VR](https://github.com/joses2017smjh/quest-vr-teleop)** — WebXR controller poses → inverse kinematics → SocketCAN arm commands, with gravity feedforward and grip-based motion gating. Ten arm joints have recorded calibration checks; hardware integration is separate from learned locomotion studies.
-- **[Vision-guided pruning](https://github.com/joses2017smjh/isaac-sim-pruning-workflow)** — RGB-D control, dual-ToF/contact release gates, and independent recording checks in Isaac Sim. Recent low-sun controls separate shadow-induced tracking loss from actual occlusion; population failures remain published.
-- **[SPUR metric depth](https://github.com/joses2017smjh/spur-depth-service)** — FastAPI inference, six-view RGB+D refinement, split ONNX export, and calibrated reconstruction. Five stored synthetic best-validation scores: **0.0445 ± 0.0057 m** trunk RMSE; real-orchard accuracy is unverified.
-- **[Humanoid Robustness Ladder](https://github.com/joses2017smjh/bhl-robustness-ladder)** — Isaac Lab training and MuJoCo evaluation with matched controls. Studies cover randomization, lidar-mapped navigation, and gait-clock ablations; results are simulation-to-simulation.
-- **[Bimanual garment folding](https://github.com/joses2017smjh/IsaacSimFolding)** — VLA integration, cloth simulation, source-pinned paired evaluations, and checkpoint-promotion gates. The latest fine-tune improved short-horizon outcomes but failed the long-horizon gate; the baseline was retained.
+- **[Humanoid VR teleoperation](https://github.com/joses2017smjh/quest-vr-teleop)** — Control humanoid arms from a Quest headset. WebXR input, inverse kinematics, SocketCAN control, and calibration checks for ten joints.
+- **[SPUR metric depth](https://github.com/joses2017smjh/spur-depth-service)** — Estimate orchard depth and reconstruct branch geometry. PyTorch models, a FastAPI service, and ONNX export; depth accuracy is evaluated on synthetic data.
+- **[Vision-guided pruning](https://github.com/joses2017smjh/isaac-sim-pruning-workflow)** — Guide a simulated UR5e from branch tracking through sensor-gated release and return. Recorded trials include successes and failures.
+- **[Humanoid locomotion & navigation](https://github.com/joses2017smjh/bhl-robustness-ladder)** — Train in Isaac Lab and evaluate in MuJoCo. Matched controls, sensor studies, and checkpoint gates; hardware locomotion transfer remains unvalidated.
+- **[MetaNaviT](https://github.com/joses2017smjh/MetaNavT)** — Search research files, inspect sources, and review proposed changes. Hybrid retrieval, RAG workflows, MCP tools, and reproducible ranking benchmarks.
+
+## More work
+
+- **[Bimanual garment folding](https://github.com/joses2017smjh/IsaacSimFolding)** — Camera-driven policies and cloth simulation. Paired evaluations caught a long-horizon regression and kept the baseline.
+- **[Agentic Soccer MCP](https://github.com/joses2017smjh/Agentic-Soccer-Match-Prediction-MCP)** — Soccer forecasting and agent evaluation with FastAPI, LangGraph, and MCP tools. The hosted interface uses synthetic demo data; historical backtests are documented separately.
 
 ## Technical focus
 
-Python, C++, PyTorch, OpenCV, Isaac Sim / Isaac Lab, MuJoCo, ROS 2, SocketCAN, ONNX Runtime, FastAPI, Docker, and Slurm.
+**Robotics & vision:** Python, C++, PyTorch, OpenCV, Isaac Sim / Isaac Lab, MuJoCo, ROS 2, SocketCAN, ONNX Runtime.
 
-For software and retrieval roles: **[MetaNaviT](https://github.com/joses2017smjh/MetaNavT)** combines lexical/dense retrieval, source tracing, and reviewable file operations with benchmarked reranking.
+**AI & software:** FastAPI, PostgreSQL / pgvector, hybrid retrieval, RAG, MCP, Docker, and Slurm.
 
-The [portfolio](https://jose-sanchez-portfolio-com.vercel.app/#projects) provides
-short visual case studies; the repositories contain setup, architecture,
-results and current limitations.
+See the [portfolio](https://jose-sanchez-portfolio-com.vercel.app/#projects) for demos and short case studies. Each repository contains the implementation, setup, evidence, and current limits.
