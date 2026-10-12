@@ -20,7 +20,7 @@ Seeking **robotics software, embodied AI, computer vision, and AI/software engin
 
 ## More work
 
-- **[Bimanual garment folding](https://github.com/joses2017smjh/IsaacSimFolding)** — Camera-driven policies and cloth simulation. Paired evaluations caught a long-horizon regression and kept the baseline.
+- **[Bimanual garment folding](https://github.com/joses2017smjh/IsaacSimFolding)** — Camera-driven policies and cloth simulation. A short-horizon gain failed the full promotion gate; the baseline was retained.
 - **[Agentic Soccer MCP](https://github.com/joses2017smjh/Agentic-Soccer-Match-Prediction-MCP)** — Soccer forecasting and agent evaluation with FastAPI, LangGraph, and MCP tools. The hosted interface uses synthetic demo data; historical backtests are documented separately.
 
 ## Technical focus
